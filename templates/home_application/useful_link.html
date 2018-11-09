@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <!--蓝鲸提供的公用样式库 -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk_pack.css" rel="stylesheet">
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/bk/js/bk.js"></script>
+    <!-- 数据埋点统计 -->
+    <script src="http://magicbox.bk.tencent.com/static_api/analysis.js"></script>
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]><script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/html5shiv.min.js"></script><script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/respond.min.js"></script><![endif]-->
+</head>
+
+<body class="bg-white" data-bg-color="bg-white">
+    <div class="king-page-box">
+        <div class="king-container clearfix">
+            <nav role="navigation" class="navbar navbar-default king-horizontal-nav2    f14 ">
+                <div class="container " style="width:100%;overflow:hidden;">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed navbar-toggle-sm" data-toggle="collapse" data-target="#king-horizontal-nav2-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="javascript:;">
+                            <img src="https://magicbox.bk.tencent.com/static_api/v3/bk/images/logo3.png" alt="" class="logo"> </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-responsive-collapse" id="king-horizontal-nav2-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="king-navbar-active"><a href="javascript:void(0);">Home</a></li>
+                            <li><a href="javascript:void(0);">Not Ready</a></li>
+                            <li><a href="javascript:void(0);">Not Ready</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="javascript:;">
+                                    <span>Admin</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="king-block king-block-bordered king-block-themed mb0">
+                <div class="king-block-header king-info">
+                    <ul class="king-block-options">
+                        <li>
+                            <!-- <button type="button"><i class="fa fa-cog"></i></button> -->
+                        </li>
+                    </ul>
+                    <h3 class="king-block-title">Updating Forms</h3>
+                </div>
+                <div class="king-block-content">
+                    <div class="container-fluid mb0 ">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div style="height:310px; overflow: auto;" id="list_1537926642067" class="king-list3 m0">
+                                    <table class="king-list3-table ranger-box">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:42px;">1</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1OJaJSkvZgNWtxS624qoV1hLG8Ww56Fe9tCZRqFlZus8/edit#gid=1140677053">CCU Loads</a></td>
+                                                <td>Update Every Monday</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:42px;">2</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1x4aV31N0q_GGinb-7k2uDiQHloRkC3YRMGJJwGF1kys/edit#gid=299886835">GTO Release</a></td>
+                                                <td>Update Every Friday</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:42px;">3</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1BLBLbI0b_xn47pqwrKdc1eosbW4W6UPlHpx_XvsdBDo/edit#gid=1115806944">Windows Update List</td>
+                                                <td>Update After List Received from NC</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:42px;">4</td>
+                                                <td style="width:40%;"><a href="http://gtoconfluence.garenanow.com:8090/display/RT/2018+CALENDAR">Confluence Canlendar</a></td>
+                                                <td>Update Before MA</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:42px;">5</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1M14ps4KeUqVC6El7DZ4uKDstpFe_d02g7qMPPkKt-o4/edit#gid=522878767">GAH Shipment Status</a></td>
+                                                <td>Update After Released GAH </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- 设置面板Start -->
+                                <template id="ranger_nodata_tpl">
+                                    <tr>
+                                        <td colspan="3"> 没有数据 </td>
+                                    </tr>
+                                </template>
+                                <template id="ranger_tpl">
+                                    <tr>
+                                        <td style="width:42px;">#index#</td>
+                                        <td style="width:40%;">#name#</td>
+                                        <td>#score#</td>
+                                    </tr>
+                                </template>
+                                <!-- 设置面板End -->
+                            </div>
+                            <div class="col-md-6">
+                                <div style="height:310px; overflow: auto;" id="list_1537926644835" class="king-list3 m0">
+                                    <table class="king-list3-table ranger-box">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:42px;">1</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1OJaJSkvZgNWtxS624qoV1hLG8Ww56Fe9tCZRqFlZus8/edit#gid=1387203173">PB MA status</a></td>
+                                                <td>Update After MA</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:42px;">2</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/17L_OemaRMHoYFrT-OAQzJYdFYZzk3ZNlbTY3Yujq4iM/edit#gid=111048604">BNS MA note</a></td>
+                                                <td>Update Before MA</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:42px;">3</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1cpDFtguxSdh6qQSds1cFFN0o80CMLhYPQ0eb8tylwjg/edit#gid=1894529088">BNS Build Track</a></td>
+                                                <td>Update After Deploy New Build</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:42px;">4</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1Y2w5zuM0Js0mVZzwMvLSx2r4HzlZvyMaQqyrLORmagU/edit#gid=257798051">PB Oncall List</a></td>
+                                                <td>Update Every Year</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:42px;">5</td>
+                                                <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1Y2w5zuM0Js0mVZzwMvLSx2r4HzlZvyMaQqyrLORmagU/edit#gid=1063226852">BNS Oncall List</a></td>
+                                                <td>Update Every Year</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- 设置面板Start -->
+                                <template id="ranger_nodata_tpl">
+                                    <tr>
+                                        <td colspan="3"> 没有数据 </td>
+                                    </tr>
+                                </template>
+                                <template id="ranger_tpl">
+                                    <tr>
+                                        <td style="width:42px;">#index#</td>
+                                        <td style="width:40%;">#name#</td>
+                                        <td>#score#</td>
+                                    </tr>
+                                </template>
+                                <!-- 设置面板End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mb0 ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel mb0 panel-box info-box">
+                            <div class="panel-left panel-item bg-success"> <i class="fa fa-rocket text-large stat-icon"></i> </div>
+                            <div class="panel-right panel-item bg-reverse">
+                                <p class="f36 no-margin">Point Blank
+                                    <span class="f24"></span>
+                                </p>
+                                <p class="text-muted no-margin">
+                                    <span>Server Info</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 设置面板Start -->
+                        <!-- 设置面板End -->
+                        <div style="height:310px; overflow: auto;" id="list_1537926477222" class="king-list3 m0">
+                            <table class="king-list3-table ranger-box">
+                                <tbody>
+                                    <tr>
+                                        <td style="width:42px;">1</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/14hv_cozssl_ChTtjHF1KGprJbcB-8SDFcVyM5bjKEv0/edit?ts=599fe131#gid=2132601603">Server Spec</a></td>
+                                        <td>PBID</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">2</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1Du0G7KaeuOlKUok24VHzaaq6SeIRwU2lpP3SFx6yP6Q/edit#gid=1958880733">Jumphost Info</a></td>
+                                        <td>PBID</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">3</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/14hv_cozssl_ChTtjHF1KGprJbcB-8SDFcVyM5bjKEv0/edit?ts=599fe131#gid=301496743">Server Spec</a></td>
+                                        <td>PBPH</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">4</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1Du0G7KaeuOlKUok24VHzaaq6SeIRwU2lpP3SFx6yP6Q/edit#gid=1098587939">Jumphost Info</a></td>
+                                        <td>PBPH</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">5</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/14hv_cozssl_ChTtjHF1KGprJbcB-8SDFcVyM5bjKEv0/edit?ts=599fe131#gid=1246739511">Server Spec</a></td>
+                                        <td>PBTH</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">6</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1Du0G7KaeuOlKUok24VHzaaq6SeIRwU2lpP3SFx6yP6Q/edit#gid=0">Jumphost Info</a></td>
+                                        <td>PBTH</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 设置面板Start -->
+                        <template id="ranger_nodata_tpl">
+                            <tr>
+                                <td colspan="3"> 没有数据 </td>
+                            </tr>
+                        </template>
+                        <template id="ranger_tpl">
+                            <tr>
+                                <td style="width:42px;">#index#</td>
+                                <td style="width:40%;">#name#</td>
+                                <td>#score#</td>
+                            </tr>
+                        </template>
+                        <!-- 设置面板End -->
+                        <div class="king-exception-box king-500-page">
+                            <img src="https://magicbox.bk.tencent.com/static_api/v3/components/exception_500/images/expre_500.png">
+                            <h1></h1>
+                            <p></p> <!-- a href="javascript:;" class="king-btn king-info king-noborder">返回首页</a --></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel mb0 panel-box info-box">
+                            <div class="panel-left panel-item bg-success"> <i class="fa fa-rocket text-large stat-icon"></i> </div>
+                            <div class="panel-right panel-item bg-reverse">
+                                <p class="f36 no-margin">Blade & Soul
+                                    <span class="f24"></span>
+                                </p>
+                                <p class="text-muted no-margin">
+                                    <span>Server Info</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 设置面板Start -->
+                        <!-- 设置面板End -->
+                        <div style="height:310px; overflow: auto;" id="list_1537926478572" class="king-list3 m0">
+                            <table class="king-list3-table ranger-box">
+                                <tbody>
+                                    <tr>
+                                        <td style="width:42px;">1</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/14UfaZ8zI3oiaETTAgadY_kQ6OKYh1iaVM7xMpcmWDk4/edit#gid=0">Live Server List</a></td>
+                                        <td>BNSTH</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">2</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/14UfaZ8zI3oiaETTAgadY_kQ6OKYh1iaVM7xMpcmWDk4/edit#gid=1705344360">QA Server List</a></td>
+                                        <td>BNSTH</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">3</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/14UfaZ8zI3oiaETTAgadY_kQ6OKYh1iaVM7xMpcmWDk4/edit#gid=1790989928">Live Server List</a></td>
+                                        <td>BNSVN</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">4</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/14UfaZ8zI3oiaETTAgadY_kQ6OKYh1iaVM7xMpcmWDk4/edit#gid=1842197758">QA Server List</a></td>
+                                        <td>BNSVN</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 设置面板Start -->
+                        <template id="ranger_nodata_tpl">
+                            <tr>
+                                <td colspan="3"> 没有数据 </td>
+                            </tr>
+                        </template>
+                        <template id="ranger_tpl">
+                            <tr>
+                                <td style="width:42px;">#index#</td>
+                                <td style="width:40%;">#name#</td>
+                                <td>#score#</td>
+                            </tr>
+                        </template>
+                        <!-- 设置面板End -->
+                        <div class="king-exception-box king-403-page">
+                            <img src="https://magicbox.bk.tencent.com/static_api/v3/components/exception_building/images/building.png">
+                            <h1></h1> <!-- a href="javascript:;" class="king-btn king-info">立即跳转</a --></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel mb0 panel-box info-box">
+                            <div class="panel-left panel-item bg-success"> <i class="fa fa-rocket text-large stat-icon"></i> </div>
+                            <div class="panel-right panel-item bg-reverse">
+                                <p class="f36 no-margin">Blueking
+                                    <span class="f24"></span>
+                                </p>
+                                <p class="text-muted no-margin">
+                                    <span>Server Info</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 设置面板Start -->
+                        <!-- 设置面板End -->
+                        <div style="height:310px; overflow: auto;" id="list_1537926480210" class="king-list3 m0">
+                            <table class="king-list3-table ranger-box">
+                                <tbody>
+                                    <tr>
+                                        <td style="width:42px;">1</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1av6DfnTs4S4JfBrJhyfP4PEr_r4om2EDR8IpE0q0kFE/edit#gid=0">Server Spec</a></td>
+                                        <td>Live Environment</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">2</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/1av6DfnTs4S4JfBrJhyfP4PEr_r4om2EDR8IpE0q0kFE/edit#gid=490507700">Server Spec</a></td>
+                                        <td>Test Envrionment</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">3</td>
+                                        <td style="width:40%;"><a href="https://docs.google.com/spreadsheets/d/17RskeXsMog62Sw1mRN68vhzK3BjwyLHeVEaKkoCnaW4/edit#gid=480611625">Issue Integration</a></td>
+                                        <td>Test Environment</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:42px;">4</td>
+                                        <td style="width:40%;"><a href="https://evansastre.gitbook.io/srvops/~/drafts/-LMu-iIsCVtSjCDFANQ-/primary/v/master/blueking/blueking-1">Notes-shilei/kailun</a></td>
+                                        <td>Test Environment</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 设置面板Start -->
+                        <template id="ranger_nodata_tpl">
+                            <tr>
+                                <td colspan="3"> 没有数据 </td>
+                            </tr>
+                        </template>
+                        <template id="ranger_tpl">
+                            <tr>
+                                <td style="width:42px;">#index#</td>
+                                <td style="width:40%;">#name#</td>
+                                <td>#score#</td>
+                            </tr>
+                        </template>
+                        <!-- 设置面板End -->
+                        <div class="king-exception-box king-login-page">
+                            <img src="https://magicbox.bk.tencent.com/static_api/v3/components/exception_login/images/expre_login.png">
+                            <h1></h1>
+                            <p></p>
+                            <!-- p class="king-login-back">
+                                <span><b></b>&nbsp;</span>&nbsp;或者&nbsp; <a href="javascript:;" class="king-btn king-info king-btn-mini f12">立即跳转</a> </p -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<script>-->
+        <!--function renderTpl(str, cfg) {-->
+                <!--var re = /(#(.+?)#)/g;-->
+
+                <!--return str.replace(re, function() {-->
+                    <!--var val = cfg[arguments[2]]+'';-->
+                    <!--if(typeof val == 'undefined') {-->
+                        <!--val = '';-->
+                    <!--}-->
+                    <!--return val;-->
+                <!--});-->
+            <!--}-->
+
+            <!--function initRanger(conf){-->
+                <!--// 异步请求后台数据-->
+                <!--$.ajax({-->
+                    <!--url: conf.url,-->
+                    <!--type: 'GET',-->
+                    <!--dataType: conf.dataType,-->
+                    <!--success: function(res){-->
+                        <!--//获取数据成功-->
+                        <!--if (res.code == 0){-->
+                            <!--var _html = ' ';-->
+                            <!--var list = res.data;-->
+
+                            <!--var tpl = $('#ranger_tpl').html();-->
+                            <!--if (list.length == 0){-->
+                                <!--_html = $('#ranger_nodata_tpl').html();-->
+                            <!--}else{-->
+                                <!--for (var i=0,len=list.length; i < len; i++){-->
+                                    <!--var item = list[i];-->
+                                    <!--_html += renderTpl(tpl, item)-->
+                                <!--}-->
+                            <!--}-->
+                            <!--$(conf.container).html(_html);-->
+                        <!--}-->
+                    <!--}-->
+                <!--});-->
+            <!--}-->
+    <!--</script>-->
+    <!--<script>-->
+        <!--initRanger({-->
+                <!--url: 'https://magicbox.bk.tencent.com/static_api/v3/components/list3/demo.json',-->
+                <!--dataType: 'json',-->
+                <!--container: '#list_1537926642067 .ranger-box tbody'-->
+            <!--});-->
+    <!--</script>-->
+    <!--<script>-->
+        <!--initRanger({-->
+                <!--url: 'https://magicbox.bk.tencent.com/static_api/v3/components/list3/demo.json',-->
+                <!--dataType: 'json',-->
+                <!--container: '#list_1537926644835 .ranger-box tbody'-->
+            <!--});-->
+    <!--</script>-->
+    <!--<script>-->
+        <!--initRanger({-->
+                <!--url: 'https://magicbox.bk.tencent.com/static_api/v3/components/list3/demo.json',-->
+                <!--dataType: 'json',-->
+                <!--container: '#list_1537926477222 .ranger-box tbody'-->
+            <!--});-->
+    <!--</script>-->
+    <!--<script>-->
+        <!--initRanger({-->
+                <!--url: 'https://magicbox.bk.tencent.com/static_api/v3/components/list3/demo.json',-->
+                <!--dataType: 'json',-->
+                <!--container: '#list_1537926478572 .ranger-box tbody'-->
+            <!--});-->
+    <!--</script>-->
+    <!--<script>-->
+        <!--initRanger({-->
+                <!--url: 'https://magicbox.bk.tencent.com/static_api/v3/components/list3/demo.json',-->
+                <!--dataType: 'json',-->
+                <!--container: '#list_1537926480210 .ranger-box tbody'-->
+            <!--});-->
+    <!--</script>-->
+</body>
+
+</html>
